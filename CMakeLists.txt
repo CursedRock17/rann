@@ -9,8 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_ros REQUIRED)
 find_package(rclcpp REQUIRED)
+#find_package(opencv2 REQUIRED)
 find_package(geometry2 REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 #find_package(rmw_zenoh_cpp REQUIRED)
 
 add_library(backend src/backend.cpp)
@@ -22,8 +24,10 @@ target_include_directories(backend PUBLIC
 ament_target_dependencies(
   backend
   "rclcpp"
+  #"opencv2"
   "geometry2"
   "geometry_msgs"
+  "sensor_msgs"
   #  "rmw_zenoh_cpp"
 )
 
