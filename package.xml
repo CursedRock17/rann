@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rann</name>
+  <version>0.0.1</version>
+  <description>Robotic Analytical Neural Network - a package that helps robots get a sense of the environment around them as well as the decisions they need to make</description>
+  <maintainer email="mtglucas1@gmail.com">Lucas Wendland</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>geometry2</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rmw_zenoh_cpp</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
